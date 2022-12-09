@@ -5,15 +5,17 @@ Refinacion de codigo y se publicara en GITHUB
 """
 
 
-def costos_lista():
-    archivo = open('gift_costs.txt', 'r')
-    gift_costs = list(archivo)
+def costs_list():
+    """Devolucion lista de costos"""
+    with open('gift_costs.txt', 'r', encoding='UTF-8') as archivo:
+        gift_costs = list(archivo)
     gift_costs = [int(c) for c in gift_costs]
     archivo.close()
     return gift_costs
 
 
 def total(gift_costs):
+    """Sumatoria lista de costos"""
     precio_final = 0
     for cost in gift_costs:
         if cost > 1000:
@@ -25,8 +27,7 @@ def total(gift_costs):
 
 
 def main():
-    print(total(costos_lista()))
-    
+    """Impresion del total"""
+    print(total(costs_list()))
 
-if __name__ == '_main_':
-    main()
+main()
