@@ -1,7 +1,7 @@
 """
 Freddy Enrique Peña Tejada 23-0943
 Refinando Código
-En este ejercicio, se refinará un código dado y se publicará en un repositorio de Github
+Refinacion de codigo y se publicara en GITHUB
 """
 
 
